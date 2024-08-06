@@ -20,11 +20,11 @@ Ce logiciel est disponible dans une version de production directement installabl
 
 Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).
 
-[Télécharger le programme ou son installeur](DDD) (WIP)
+[Télécharger le programme ou son installeur](https://olfsoftware.lemonsqueezy.com/buy/b304c811-ab6e-4a70-818b-1a2bfa39092b)
 
 Si vous utilisez régulièrement ce logiciel et en êtes satisfait vous êtes invité à en acheter une licence d'utilisateur final. L'achat d'une licence vous donnera accès aux mises à jour du logiciel en plus d'activer d'évenuelles fonctionnalités optionnelles.
 
-[Acheter une licence](FFF) (WIP)
+[Acheter une licence](https://olfsoftware.lemonsqueezy.com/buy/18603769-f733-4e85-9d23-1a2e64392c10)
 
 Vous pouvez aussi [consulter le site du logiciel](https://xorkeysgenerator.olfsoftware.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
 
