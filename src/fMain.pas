@@ -234,6 +234,7 @@ begin
 {$IF Defined(MACOS) and not Defined(IOS)}
   mnuAbout.Parent := mnuMacOS;
   mnuQuit.Visible := false;
+  mnuFile.Visible := false;
 {$ENDIF}
   mnuMacOS.Visible := (mnuMacOS.ItemsCount > 0);
   mnuHelp.Visible := (mnuHelp.ItemsCount > 0);
