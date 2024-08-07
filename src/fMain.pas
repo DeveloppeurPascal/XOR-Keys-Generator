@@ -32,8 +32,8 @@
 /// https://github.com/DeveloppeurPascal/XOR-Keys-Generator
 ///
 /// ***************************************************************************
-/// File last update : 2024-04-28T14:10:06.143+02:00
-/// Signature : 544cbfa01c7068f7b3e6668868ff79f1fd477c04
+/// File last update : 2024-08-07T08:10:32.000+02:00
+/// Signature : bb2ef2fc9b7b977cc5749aeaf81b0941f6250edf
 /// ***************************************************************************
 /// </summary>
 
