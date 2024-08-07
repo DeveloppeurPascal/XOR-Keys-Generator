@@ -53,6 +53,7 @@ object frmMain: TfrmMain
     URL = 'https://xorkeysgenerator.olfsoftware.fr/'
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
+    ReplaceMainFormCaption = True
     Left = 472
     Top = 304
   end
