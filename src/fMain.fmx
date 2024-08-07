@@ -43,8 +43,8 @@ object frmMain: TfrmMain
   end
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'XOR Keys Generator'
-    VersionNumero = '1.0'
-    VersionDate = '20240426'
+    VersionNumero = '1.1'
+    VersionDate = '20240807'
     MultiResBitmap = <
       item
       end>
@@ -53,6 +53,7 @@ object frmMain: TfrmMain
     URL = 'https://xorkeysgenerator.olfsoftware.fr/'
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
+    Copyright = '2024 Patrick Pr'#233'martin'
     ReplaceMainFormCaption = True
     Left = 472
     Top = 304
