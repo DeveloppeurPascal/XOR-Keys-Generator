@@ -32,8 +32,8 @@
   https://github.com/DeveloppeurPascal/XOR-Keys-Generator
 
   ***************************************************************************
-  File last update : 2025-05-26T19:40:40.000+02:00
-  Signature : 3408209aeb8c80d47fd76d7d771cb90bf96fc10c
+  File last update : 2025-05-26T20:13:42.000+02:00
+  Signature : e18c1ff0921ae002d580036263d9f32360f22849
   ***************************************************************************
 *)
 
@@ -101,6 +101,7 @@ implementation
 {$R *.fmx}
 
 uses
+  FMX.DialogService,
   u_urlOpen,
   Olf.RTL.CryptDecrypt,
   uConfigHelpers,
@@ -122,8 +123,8 @@ var
 begin
   randomize;
   sKeySize := FKeySize.ToString;
-  InputQuery('Key size', ['How many values do you want for this key ?'],
-    [sKeySize],
+  tdialogservice.InputQuery('Key size',
+    ['How many values do you want for this key ?'], [sKeySize],
     procedure(const AResult: TModalResult; const AValues: array of string)
     var
       i: integer;
