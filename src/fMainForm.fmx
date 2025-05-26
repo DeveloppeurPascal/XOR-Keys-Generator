@@ -1,64 +1,8 @@
-object frmMain: TfrmMain
-  Left = 0
-  Top = 0
-  Caption = 'Form3'
-  ClientHeight = 480
-  ClientWidth = 640
-  Position = ScreenCenter
-  FormFactor.Width = 320
-  FormFactor.Height = 480
-  FormFactor.Devices = [Desktop]
+inherited MainForm: TMainForm
+  Caption = '__MainFormAncestor1'
   OnCreate = FormCreate
   DesignerMasterStyle = 0
-  object MainMenu1: TMainMenu
-    Left = 536
-    Top = 264
-    object mnuMacOS: TMenuItem
-      Text = 'mnuMacOS'
-    end
-    object mnuFile: TMenuItem
-      Text = '&File'
-      object mnuQuit: TMenuItem
-        Locked = True
-        Text = '&Quit'
-        OnClick = mnuQuitClick
-      end
-    end
-    object mnuLanguages: TMenuItem
-      Text = '&Languages'
-      object mnuPascal: TMenuItem
-        Locked = True
-        Text = '&Pascal'
-        OnClick = mnuLanguageCodeClick
-      end
-    end
-    object mnuHelp: TMenuItem
-      Text = '&Help'
-      object mnuAbout: TMenuItem
-        Locked = True
-        Text = '&About'
-        OnClick = mnuAboutClick
-      end
-    end
-  end
-  object OlfAboutDialog1: TOlfAboutDialog
-    Titre = 'XOR Keys Generator'
-    VersionNumero = '1.1'
-    VersionDate = '20240807'
-    MultiResBitmap = <
-      item
-      end>
-    Images = dmLogo.imgLogo
-    ImageIndex = 0
-    URL = 'https://xorkeysgenerator.olfsoftware.fr/'
-    onURLClick = OlfAboutDialog1URLClick
-    Langue = EN
-    Copyright = '2024 Patrick Pr'#233'martin'
-    ReplaceMainFormCaption = True
-    Left = 472
-    Top = 304
-  end
-  object VertScrollBox1: TVertScrollBox
+  object VertScrollBox1: TVertScrollBox [1]
     Align = Client
     Size.Width = 640.000000000000000000
     Size.Height = 480.000000000000000000
@@ -107,8 +51,8 @@ object frmMain: TfrmMain
         Size.Height = 122.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Viewport.Width = 616.000000000000000000
-        Viewport.Height = 118.000000000000000000
+        Viewport.Width = 620.000000000000000000
+        Viewport.Height = 122.000000000000000000
       end
       object btnRefreshCode: TButton
         Align = Bottom
@@ -158,7 +102,7 @@ object frmMain: TfrmMain
           Size.Width = 80.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 4
+          TabOrder = 3
           Text = 'Sample'
           TextSettings.Trimming = None
           OnClick = btnPascalSampleClick
@@ -177,8 +121,8 @@ object frmMain: TfrmMain
         Size.Height = 148.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Viewport.Width = 616.000000000000000000
-        Viewport.Height = 144.000000000000000000
+        Viewport.Width = 620.000000000000000000
+        Viewport.Height = 148.000000000000000000
       end
     end
   end

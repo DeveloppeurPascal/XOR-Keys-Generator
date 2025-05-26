@@ -1,4 +1,4 @@
-object dmLogo: TdmLogo
+object dmAboutBoxLogo: TdmAboutBoxLogo
   Height = 480
   Width = 640
   object imgLogo: TImageList
@@ -189,16 +189,16 @@ object dmLogo: TdmLogo
               A935966607FB86BFE31D3D1AE6DD175BF97FD1D0AFD2224F5677000000004945
               4E44AE426082}
             FileName = 
-              'C:\Users\patrickpremartin\Documents\Embarcadero\Studio\Projets\X' +
-              'ORKeysGenerator\assets\icons\XORKeysGeneratorIcon-256x256.png'
+              'C:\Dev\XOR-Keys-Generator\assets\icons\XORKeysGeneratorIcon-256x' +
+              '256.png'
           end>
-        Name = 'XORKeysGeneratorIcon-256x256'
+        Name = 'StarterKitDefaultIcon-256x256'
       end>
     Destination = <
       item
         Layers = <
           item
-            Name = 'XORKeysGeneratorIcon-256x256'
+            Name = 'StarterKitDefaultIcon-256x256'
             SourceRect.Right = 256.000000000000000000
             SourceRect.Bottom = 256.000000000000000000
           end>
