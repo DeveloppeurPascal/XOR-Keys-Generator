@@ -5,10 +5,11 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">OSXARM64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>693267</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>XORKeysGenerator.dpr</MainSource>
+        <ProjectName Condition="'$(ProjectName)'==''">XORKeysGenerator</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -451,7 +452,7 @@
     <PropertyGroup Condition="'$(Cfg_2_iOSDevice64)'!=''">
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
-        <VerInfo_BundleId>olfsoftware.fmxtoolstemplate.$(ModuleName)</VerInfo_BundleId>
+        <VerInfo_BundleId>fr.olfsoftware.xorkeysgenerator</VerInfo_BundleId>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=fr;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=fr.olfsoftware.xorkeysgenerator;CFBundleInfoDictionaryVersion=7.1;CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user;NSLocationAlwaysAndWhenInUseUsageDescription=The reason for accessing the location information of the user;UIBackgroundModes=;NSContactsUsageDescription=The reason for accessing the contacts;NSPhotoLibraryUsageDescription=The reason for accessing the photo library;NSPhotoLibraryAddUsageDescription=The reason for adding to the photo library;NSCameraUsageDescription=The reason for accessing the camera;NSFaceIDUsageDescription=The reason for accessing the face id;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSSiriUsageDescription=The reason for accessing Siri;ITSAppUsesNonExemptEncryption=false;NSBluetoothAlwaysUsageDescription=The reason for accessing bluetooth;NSBluetoothPeripheralUsageDescription=The reason for accessing bluetooth peripherals;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSMotionUsageDescription=The reason for accessing the accelerometer;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers</VerInfo_Keys>
     </PropertyGroup>
@@ -464,38 +465,44 @@
     <PropertyGroup Condition="'$(Cfg_2_OSX64)'!=''">
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=fr.olfsoftware.xorkeysgenerator;CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false;NSBluetoothAlwaysUsageDescription=The reason for accessing the Bluetooth interface</VerInfo_Keys>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=fr.olfsoftware.xorkeysgenerator;CFBundleVersion=2.0.2;CFBundleShortVersionString=2.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false;NSBluetoothAlwaysUsageDescription=The reason for accessing the Bluetooth interface</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\XORKeysGeneratorIcon.ico</Icon_MainIcon>
         <Icns_MainIcns>..\assets\icons\XORKeysGeneratorIcon.icns</Icns_MainIcns>
-        <Manifest_File>..\lib-externes\FMX-Tools-Starter-Kit\src\(vide)</Manifest_File>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <BT_BuildType>DeveloperID</BT_BuildType>
+        <VerInfo_Build>2</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_OSXARM64)'!=''">
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=fr.olfsoftware.xorkeysgenerator;CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false;NSBluetoothAlwaysUsageDescription=The reason for accessing the Bluetooth interface</VerInfo_Keys>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=fr.olfsoftware.xorkeysgenerator;CFBundleVersion=2.0.1;CFBundleShortVersionString=2.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false;NSBluetoothAlwaysUsageDescription=The reason for accessing the Bluetooth interface</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\XORKeysGeneratorIcon.ico</Icon_MainIcon>
         <Icns_MainIcns>..\assets\icons\XORKeysGeneratorIcon.icns</Icns_MainIcns>
-        <Manifest_File>..\lib-externes\FMX-Tools-Starter-Kit\src\(vide)</Manifest_File>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <BT_BuildType>DeveloperID</BT_BuildType>
+        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=fr.olfsoftware.xorkeysgenerator;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=2.0.0.0;InternalName=;LegalCopyright=(c) 2024-2025 Patrick PREMARTIN;LegalTrademarks=;OriginalFilename=;ProgramID=fr.olfsoftware.xorkeysgenerator;ProductName=$(MSBuildProjectName);ProductVersion=2.0;Comments=</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\XORKeysGeneratorIcon.ico</Icon_MainIcon>
         <Icns_MainIcns>..\assets\icons\XORKeysGeneratorIcon.icns</Icns_MainIcns>
         <UWP_DelphiLogo44>..\assets\icons\XORKeysGeneratorIcon-44x44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>..\assets\icons\XORKeysGeneratorIcon-150x150.png</UWP_DelphiLogo150>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=fr.olfsoftware.xorkeysgenerator;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=2.0.0.0;InternalName=;LegalCopyright=(c) 2024-2025 Patrick PREMARTIN;LegalTrademarks=;OriginalFilename=;ProgramID=fr.olfsoftware.xorkeysgenerator;ProductName=$(MSBuildProjectName);ProductVersion=2.0;Comments=</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\XORKeysGeneratorIcon.ico</Icon_MainIcon>
         <Icns_MainIcns>..\assets\icons\XORKeysGeneratorIcon.icns</Icns_MainIcns>
         <UWP_DelphiLogo44>..\assets\icons\XORKeysGeneratorIcon-44x44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>..\assets\icons\XORKeysGeneratorIcon-150x150.png</UWP_DelphiLogo150>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -699,16 +706,38 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit.dSYM" Configuration="Debug" Class="ProjectOSXDebug"/>
-                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
-                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
-                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="OSXARM64\Debug\XORKeysGenerator.dSYM" Configuration="Debug" Class="ProjectOSXDebug">
+                <DeployFile LocalName="..\assets\icons\XORKeysGeneratorIcon.icns" Configuration="Release" Class="ProjectOSXResource">
+                    <Platform Name="OSX64">
+                        <RemoteName>XORKeysGenerator.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\assets\icons\XORKeysGeneratorIcon.icns" Configuration="Release" Class="ProjectOSXResource">
                     <Platform Name="OSXARM64">
+                        <RemoteName>XORKeysGenerator.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Release\XORKeysGenerator.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Release\XORKeysGenerator.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSX64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Release\XORKeysGenerator" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="OSX64">
                         <RemoteName>XORKeysGenerator</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
+                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
+                <DeployFile LocalName="OSXARM64\Debug\FMXToolsStarterKit" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="OSXARM64\Debug\XORKeysGenerator.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
                     <Platform Name="OSXARM64">
                         <Overwrite>true</Overwrite>
@@ -726,9 +755,38 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="OSXARM64\Release\XORKeysGenerator.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSXARM64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Release\XORKeysGenerator.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Release\XORKeysGenerator" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>XORKeysGenerator</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\FMXToolsStarterKit.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win32\Debug\XORKeysGenerator.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
+                        <RemoteName>XORKeysGenerator.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Release\XORKeysGenerator.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>XORKeysGenerator.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Release\XORKeysGenerator.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win64">
                         <RemoteName>XORKeysGenerator.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
