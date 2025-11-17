@@ -2,6 +2,19 @@
 
 [Cette page en français.](LISEZMOI.md)
 
+> [!WARNING]
+> Following Microsoft's decision to merge GitHub into its AI division in the summer of 2025 and therefore to consider what we publish on it only as a source of training for its models without any compensation (apart from hosting the source codes) or to bombard us with their injunctions to use Copilot everywhere, for everything and anything, I have decided to stop maintaining the repositories here.
+>
+> Maintenance of this project has been moved to Codeberg at https://codeberg.org/PatrickPremartin/XOR-Keys-Generator
+>
+> Codeberg is a community-based hosting service located in Europe that respects developers, the license of each project, and the privacy of those who connect to it.
+
+> [!NOTE]
+> To open or work on a ticket for this project, go to https://codeberg.org/PatrickPremartin/XOR-Keys-Generator/issues
+> To make a PULL REQUEST on this project, go to https://codeberg.org/PatrickPremartin/XOR-Keys-Generator/pulls
+> For any other information or to contact me, you can also visit the project website at https://xorkeysgenerator.olfsoftware.fr or its devlog at https://xorkeysgenerator.olfsoftware.fr/dev-corner.html.
+> This code repository will be archived once the migration is complete and will no longer be updated on GitHub.
+
 A simple generator of random series of bytes that can be used, for example, to encrypt or sign data.
 
 If you're developing under Delphi or Pascal in general, you can use these blocks with the TOlfCryptDecrypt.XORCrypt and TOlfCryptDecrypt.XORDecrypt functions in the [Olf.RTL.CryptDecrypt](https://github.com/DeveloppeurPascal/librairies/blob/master/src/Olf.RTL.CryptDecrypt.pas) unit.
